@@ -3,10 +3,102 @@ body {
   font-family: "Arial";
 }
 
+.title-container {
+  border-bottom: 2px solid #f6f6f6;
+}
+
 .title {
   font-size: 25px;
-  border-bottom: 2px solid #f6f6f6;
   padding: 20px 0;
   margin: 0;
   text-transform: uppercase;
+}
+
+.city-weather__item {
+  display: none;
+}
+
+.choose-city-checkbox {
+  display: none;
+}
+
+#palo-alto:checked ~ .choose-city label[for="palo-alto"],
+#san-jose:checked ~ .choose-city label[for="san-jose"],
+#santa-cruz:checked ~ .choose-city label[for="santa-cruz"],
+#honolulu:checked ~ .choose-city label[for="honolulu"]{
+  color: white;
+  background-color: #e96967;
+}
+
+#palo-alto:checked ~ .city-weather #paloaltoWeather,
+#san-jose:checked ~ .city-weather #sanjoseWeather,
+#santa-cruz:checked ~ .city-weather #santacruzWeather,
+#honolulu:checked ~ .city-weather #honoluluWeather{
+  display: block;
+}
+
+
+/* city-list */
+
+.city-list {
+  padding: 0;
+  list-style: none;
+}
+
+.city-list__item {
+  width: 200px;
+  padding: 12px;
+  border-radius: 5px;
+  display: block;
+  color: #e96967;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+/*
+.city-list__item:hover {
+  background-color: #e96967;
+  opacity: 0.2;
+  color: white;
+} */
+
+
+/* wrapper */
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper--main {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0;
+  //justify-content: space-between;
+}
+
+
+/* city-weather */
+
+.city-weather__title {
+  font-size: 35px;
+  margin-top: 0;
+  //display: flex;
+  //align-items: center;
+}
+
+.city-weather__title  span {
+  //margin-left: 10px;
+}
+
+.city-weather__list {
+  list-style: none;
+  padding: 0;
+  color: #818284;
+}
+
+
+/* data-list */
+
+.data-list__item {
+  margin-bottom: 15px;
 }

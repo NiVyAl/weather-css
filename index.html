@@ -7,39 +7,80 @@
   </head>
   
   <body>
-    <h1 class="title">simple weather app</h1>
-    
-    <div class="choose-city">
-      <h2 class="choose-city__title">Select a city</h2>
-      <ul class="city-list choose-city__list">
-        <li class="city-list__item-container">
-          <label for="Palo-Alto" class="city-list__item">Palo Alto</label>
-        </li>
+    <header class="title-container">
+      <div class="wrapper">
+        <h1 class="title">simple weather app</h1>
+      </div>
+    </header>
 
-        <li class="city-list__item-container">
-          <label for="San-Jose" class="city-list__item">San Jose</label>
-        </li>
+    <div class="wrapper wrapper--main">
+      <input type="radio" name="city" id="palo-alto" class="choose-city-checkbox" checked>
+      <input type="radio" name="city" id="san-jose" class="choose-city-checkbox">
+      <input type="radio" name="city" id="santa-cruz" class="choose-city-checkbox">
+      <input type="radio" name="city" id="honolulu" class="choose-city-checkbox">
+      
+      <div class="choose-city">
+        <h2 class="choose-city__title">Select a city</h2>
+        <ul class="city-list choose-city__list">
+          <li class="city-list__item-container">
+            <label for="palo-alto" class="city-list__item">Palo Alto</label>
+          </li>
 
-        <li class="city-list__item-container">
-          <label for="Santa-Cruz" class="city-list__item">Santa Cruz</label>
-        </li>
+          <li class="city-list__item-container">
+            <label for="san-jose" class="city-list__item">San Jose</label>
+          </li>
 
-        <li class="city-list__item-container">
-          <label for="honolulu" class="city-list__item">honolulu</label>
+          <li class="city-list__item-container">
+            <label for="santa-cruz" class="city-list__item">Santa Cruz</label>
+          </li>
+
+          <li class="city-list__item-container">
+            <label for="honolulu" class="city-list__item">honolulu</label>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="city-weather">
+        <li class="city-weather__item" id="paloaltoWeather">
+          <h2 class="city-weather__title">Rain in Palo Alto</h2>
+          <ul class="city-weather__list data-list">
+            <li class="data-list__item">Current: 56.84&#176;</li>
+            <li class="data-list__item">Hight: 59&#176;</li>
+            <li class="data-list__item">Low: 59&#176;</li>
+            <li class="data-list__item">Wind Speed: 8.86 mi/hr</li>
+          </ul>
+        </li>
+        
+        <li class="city-weather__item" id="sanjoseWeather">
+          <h2 class="city-weather__title">Sun in San-jose</h2>
+          <ul class="city-weather__list data-list">
+            <li class="data-list__item">Current: 65.48&#176;</li>
+            <li class="data-list__item">Hight: 95&#176;</li>
+            <li class="data-list__item">Low: 59&#176;</li>
+            <li class="data-list__item">Wind Speed: 5.68 mi/hr</li>
+          </ul>
+        </li>
+        
+        <li class="city-weather__item" id="santacruzWeather">
+          <h2 class="city-weather__title">Hurricane in San-jose</h2>
+          <ul class="city-weather__list data-list">
+            <li class="data-list__item">Current: 48.65&#176;</li>
+            <li class="data-list__item">Hight: 43&#176;</li>
+            <li class="data-list__item">Low: 65&#176;</li>
+            <li class="data-list__item">Wind Speed: 3.26 mi/hr</li>
+          </ul>
+        </li>
+        
+        <li class="city-weather__item" id="honoluluWeather">
+          <h2 class="city-weather__title">Erumption in Honolulu</h2>
+          <ul class="city-weather__list data-list">
+            <li class="data-list__item">Current: 31.89&#176;</li>
+            <li class="data-list__item">Hight: 45&#176;</li>
+            <li class="data-list__item">Low: 84&#176;</li>
+            <li class="data-list__item">Wind Speed: 7.68 mi/hr</li>
+          </ul>
         </li>
       </ul>
     </div>
-    
-    <ul class="city-weather">
-      <li class="city-weather__item">
-        <h2 class="city-weather__title">Rain in Palo Alto</h2>
-        <ul class="city-weather__list data-list">
-          <li class="data-list__item">Current: 56.84</li>
-          <li class="data-list__item">Hight: 59</li>
-          <li class="data-list__item">Low: 59</li>
-          <li class="data-list__item">Wind Speed: 8.86 mi/hr</li>
-        </ul>
-      </li>
-    </ul>
   </body>
 </html>
